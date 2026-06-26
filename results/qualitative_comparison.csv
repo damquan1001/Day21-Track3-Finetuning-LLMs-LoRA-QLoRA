@@ -1,0 +1,86 @@
+prompt,base,finetuned
+Giải thích khái niệm machine learning cho người mới bắt đầu.,Machine learning là một phân tích thống kê và học máy mà các thuật toán được sử dụng để học từ dữ liệu và áp dụng cho dự đoán. Nó được sử dụng để phát hiện các mô hình từ dữ liệu và dự đoán giá trị dựa trên các mô hình đó. Machine learning có thể được chia thành 2 loại chính: phân loại và dự đoán.,"Machine learning là một phân tích máy tính, trong đó máy tính học và cải thiện khả năng của mình dựa trên dữ liệu. Nó là một phân tích máy tính để phân loại và dự đoán các giá trị dựa trên các thuật toán học máy. Machine learning giúp các hệ thống máy tính tự động học được các mô hình, dựa trên các "
+Viết đoạn code C# tính số Fibonacci thứ n.,"using System;
+
+namespace Fibonacci
+{
+    public static class Fibonacci
+    {
+        public static int Fibonacci(int n)
+        {
+            if (n == 0)
+                return 0;
+            if (n == 1)
+                return 1;
+            return Fibonacci(n - 1) + Fibonacci(n - 2);
+        }
+    ","using System;
+
+class Fibonacci {
+    static int Fibonacci(int n) {
+        if (n <= 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        }
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+    }
+    static void Main() {
+        int n = 10;
+        Console.WriteL"
+Liệt kê 5 nguyên tắc thiết kế UI/UX.,"1. Kiểm tra nhu cầu của người dùng: Kiểm tra nhu cầu của người dùng là yếu tố quan trọng nhất để thiết kế UI/UX. Bạn cần xác định những gì người dùng đang cần và không cần, những gì họ tìm kiếm và không tìm kiếm, những gì họ gặp khó khăn khi sử dụng ứng dụng và những gì họ thích. Từ đó, bạn có thể t","1. Thân thiện với người dùng: UI/UX thiết kế phải thân thiện với người dùng, dễ sử dụng, dễ tiếp cận và có thể hiểu được.
+2. Môi trường trải nghiệm: UI/UX thiết kế phải tạo ra môi trường trải nghiệm tốt, cung cấp thông tin chính xác và đầy đủ, và dễ dàng sử dụng.
+3. Dễ dàng điều hướng: UI/UX thiết k"
+Provide a simple OOP C# code structure,"namespace OOP
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // create an object of the class
+            Person person = new Person();
+
+            // call the class method
+            person.Greet();
+        }
+    }
+}","namespace SimpleOOP
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // create an object of the class
+            Person person = new Person();
+
+            // call the method of the class
+            person.Speak();
+
+            // create another object of the"
+Write a bubble sort algorithm in C#.,"public static void BubbleSort(int[] arr)
+{
+    int n = arr.Length;
+
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+             ","public static void BubbleSort(int[] arr)
+{
+    int n = arr.Length;
+    bool swapped;
+    do
+    {
+        swapped = false;
+        for (int i = 0; i < n - 1; i++)
+        {
+            if (arr[i] > arr[i + 1])
+            {
+                int temp = arr[i];
+                arr[i] = arr[i + 1];
+    "
